@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
-import { NotificationsNone, Language, Settings } from "@material-ui/icons";
+import { NotificationsNone, Language } from "@material-ui/icons";
 
 const Navbar = ({ isEmployer }) => {
   const location = useLocation();
