@@ -10,7 +10,6 @@ const {
   EmployersList,
   CandidatesList,
   AgentsList,
-  LocalMaid,
   NewLocalCandidate,
 } = Admin;
 

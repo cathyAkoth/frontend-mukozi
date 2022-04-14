@@ -88,14 +88,29 @@ const Navbar = ({ isEmployer }) => {
         )}
       </div>
       <Link to="/signin" className="link">
-        {/* <div className="topbarIconContainer">
-          {location.pathname !== ("/" && "/my-account") ? (
-            <>
-              <NotificationsNone />
-              <span className="topIconBadge">2</span>
-            </>
-          ) : null}
-        </div> */}
+        {location.pathname !== "/" ? (
+          <>
+            <div className="mkz__navbar-sign">
+              <Link to="/" className="link">
+                <div className="navbarIconContainer">
+                  <NotificationsNone />
+                  <span className="navIconBadge">2</span>
+                </div>
+              </Link>
+              <Link to="/" className="link">
+                <div className="navbarIconContainer">
+                  <Language />
+                  <span className="navIconBadge">2</span>
+                </div>
+              </Link>
+              <img
+                src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""
+                className="navAvatar"
+              />
+            </div>
+          </>
+        ) : null}
       </Link>
       <div className="mkz__navbar-menu">
         {toggleMenu ? (
